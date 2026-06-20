@@ -3,77 +3,81 @@ import React from "react"
 const partner = [
     {
         country:'Ethiopia',
-        partnership:'',
+        partnership:'The Ministry of Innovation and Technology (Academic Collaboration),Dambi Dollo University',
         image:require("./ethiopia-flag 6.png")
     },
     {
         country:'Australia',
-        partnership:'',
+        partnership:'Monash University',
         image:require("./Flag-Australia 6.png")
     },
     {
         country:'Germany',
-        partnership:'',
+        partnership:'University of Applied Sciences, CSE Department,University of Siegen (Academic), University of Siegen (Cooperation Agreement), TU 9, Deutscher Akademischer Austauschdienst (DAAD)',
         image:require("./flag-germany 4.png")
     },
     {
         country:'Canada',
-        partnership:'',
+        partnership:'>Memorial University of Newfoundland',
         image:require("./canada-flag 10.png")
     },
     {
         country:'Brazil',
-        partnership:'',
+        partnership:'Federal Univesity of Sao Carlos (UFSCar)',
         image:require("./brazil-flag 8.png")
     },
     {
         country:'France',
-        partnership:'',
+        partnership:'The University of Lorraine ,Institute Polytechnique des Sciences Avancees (IPSA),French Nerwork of Engineering Schools members of the FEDERATION GAY LUSSAC',
         image:require("./image 13.png")
     },
     {
         country:'Ireland',
-        partnership:'',
+        partnership:'University College Cork, Ireland',
         image:require("./image 15.png")
     },
     {
         country:'New Zealand',
-        partnership:'',
+        partnership:'Allied Telesis Labs Limited, Auckland University of Technology',
         image:require("./new-zealand-flag 1.png")
     },
     {
         country:'Norway',
-        partnership:'',
+        partnership:'University of Agder',
         image:require("./image 16.png")
     },
     {
         country:'South Korea',
-        partnership:'',
+        partnership:'Jeju Technopark, Honorary Consulate General of the Republic of Korea in Hyderabad, Pharm CADD Co. Ltd, Busan, Woosong University(Exchange), Woosong University (Cooperation Agreement), Seoul National University',
         image:require("./Group 231.png")
     },
     {
         country:'Taiwan',
-        partnership:'',
+        partnership:`National Yunlin University of Science and Technology & Central Taiwan Science Park, National Changhua University of Education, YUAN ZE University(Educational Cooperation), Kaohsiung Medical University
+        National Tsing Hua University (Exchange Cooperation), Lunghwa University of Science and Technology, National Taipei University of Technology, Yuan Ze University (Academic Collaboration), National Chi Nan University, Asia University, National Sun Yat-sen University(NSYSU), Kaohsiung, International College of Semiconductor Technology (ICST), National Yang Ming Chiao Tung (NYCU)`,
         image:require("./taiwan-flag 2.png")
     },
     {
         country:'Turkey',
-        partnership:'',
+        partnership:'Istanbul Gedik University (Cooperation Agreement)',
         image:require("./turkey-flag 2.png")
     },
     {
         country:'United Kingdom',
-        partnership:'',
+        partnership:'GoI & Govt. of UK & Govt. of Ireland',
         image:require("./united-kingdom-flag 2.png")
     },
     {
         country:'United States',
-        partnership:'',
+        partnership:'Purdue University,Temple University (Student Exchange Agreement), Temple University (Cooperation Agreement), Hewlett & Packard, Austin, University of Pittsburgh',
         image:require("./flag-usa 2.png")
     },
     {
         country:'Japan',
-        partnership:'',
+        partnership:`Osaka University, Graduate School of Engineering, Osaka University, Enrission Corporation Limited (Shiru Cafe), Hokkaido University - Students Exchange, Hokkaido University - Internship Exchange ProgramChaintope Inc.
+, Hokkaido University, Nihon University, Toshiba Memory Corporation, SUKILLS Inc., Earthquake Disaster Mitigation Research Division, National Research Institute for Earth Science and Disaster Resilience, Saitama University, National Institute for Materials Sceince, The International Cooperative Graduate Program
+                National Institute for Material Science and Indian Institute of technology hyderabad, DENSO Corporation, I'm beside you Inc, Graduate school of science & Engineering, Ritsumeikan University , Ritsumeikan University , Waseda University, Hokkaido University - Exchange of faculty, research fellows etc., Hiroshima University, RIKEN Center for Advance Intelligence  Project, Japan, University of Tokyo, Akita International University, Shimane University
+, Tokyo City University (Academic Exchange)Tokyo City University (Student Exchange), Kanazawa University (Exchange), Kanazawa University (Cooperation Agreement), Business Breakthrough, Inc.`,
         image:require("./Flag_of_Japan.svg 10.png")
     },
     
@@ -83,22 +87,22 @@ const partner = [
 const doctprogram = [
     {
         country:'Australia',
-        partnership:'',
+        partnership:'Swinburne University of Technology (Joint Doctoral Program), Deakin University (Joint Doctoral Program)',
         image:require("./Flag-Australia 6.png")
     },
     {
         country:'Taiwan',
-        partnership:'',
+        partnership:'National Tsing Hua University (JDP)',
         image:require("./taiwan-flag 2.png")
     },
     {
         country:'       Nepal          ',
-        partnership:'',
+        partnership:'Kathmandu University',
         image:require("./nepal-flag 2.png")
     },
     {
         country:'Norway',
-        partnership:'',
+        partnership:'University of Agder (JDP)',
         image:require("./image 16.png")
     },
 ]
@@ -106,12 +110,12 @@ const doctprogram = [
 const erasmus = [
     {
         country:'Italy',
-        partnership:'',
+        partnership:'University of Campania Luigi Vanvitelli',
         image:require("./italy-flag 1.png")
     },
     {
         country:'Turkey',
-        partnership:'',
+        partnership:'Istanbul Gedik University',
         image:require("./turkey-flag 2.png")
     },
 ]
