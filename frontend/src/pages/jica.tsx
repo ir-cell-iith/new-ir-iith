@@ -9,6 +9,8 @@ import homecaro2 from "../components/images/homecaro2.png";
 import partnerhome from "../components/images/partnerhome.png";
 import jica2 from "../components/images/jica2.png";
 import jica3 from "../components/images/jica3.png";
+import jica4 from "../components/images/jica4.jpeg";
+import jica5 from "../components/images/jica5.jpeg";
 
 const JicaPage = () => {
   let pad = "40px";
@@ -143,7 +145,22 @@ const JicaPage = () => {
         </div>
       </section>
       
-      
+      <section className="defaultSection">
+    <div className="container-fluid">
+        <div className="row justify-content-center">
+            <div className="col-lg-6">
+                <div className=" mb-2">
+                    <img src={jica4}/>
+                </div>
+            </div>
+            <div className="col-lg-6">
+                <div >
+                    <img src={jica5}/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     </div>
     <Footer />
