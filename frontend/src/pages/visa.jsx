@@ -584,6 +584,8 @@ export default function Visa() {
                         <th style={{ padding: "10px", textAlign: "center" }}>Type of visa</th>
                         <th style={{ padding: "10px", textAlign: "center" }}>Period for which granted</th>
                         <th style={{ padding: "10px", textAlign: "center" }}>Entry</th>
+                        <th style={{ padding: "10px", textAlign: "center" }}>Documents Required with Application</th>
+                        <th style={{ padding: "10px", textAlign: "center" }}>Etendabel while in India</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -592,24 +594,34 @@ export default function Visa() {
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "justify" }}>Business Visa</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "justify" }}>5 years</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Multiple</td>
+                        <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Documents to prove bonafide purpose (Company
+                                letter etc.)</td>
+                        <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Yes</td>
                       </tr>
                       <tr style={{ backgroundColor: "#f9f9f9" }}>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>2</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "justify" }}>Employment Visa</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "justify" }}>1 year/ period of contract</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Multiple</td>
+                        <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Proof of employment (appointment document), terms and conditions </td>
+                        <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Yes</td>
                       </tr>
                       <tr style={{ backgroundColor: "#fff" }}>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>3</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "justify" }}>Student Visa/Research Visa</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "justify" }}>Period of course/ 5 years</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Multiple</td>
+                        <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Proof of admission in Indian Institution</td>
+                        <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Yes</td>
                       </tr>
                       <tr style={{ backgroundColor: "#f9f9f9" }}>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>4</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "justify" }}>Intern</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "justify" }}>Duration of the Internship or One year, whichever is less</td>
                         <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Single/ Double/ Multiple</td>
+                        <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Letter from the Indian company/educational institution/NGO concerned sponsoring the foreign national for the internship programme clearly indicating the period of internship</td>
+                        <td style={{ padding: "10px", border: "1px solid #ddd", textAlign: "center" }}>Non- extendable</td>
+
                       </tr>
                     </tbody>
                   </table>
@@ -631,6 +643,33 @@ export default function Visa() {
               <div style={{ backgroundColor: "#f5f5f5", padding: "20px", border: "1px solid #ddd", borderRadius: "8px", textAlign: "justify" }}>
                 <ul style={{ paddingLeft: "20px", lineHeight: "1.6", listStyleType: "disc" }}>
                   <li>For certain visa types, it is possible to extend your visa while still residing in India. Extension of such visas can be done online through the e-Foreigners Regional Registration Office (e-FRRO) portal</li>
+                    <li>
+                            Assistance for Visa extension shall be provided by the International Relations office upon
+                            request.
+
+                        </li>
+                        <li>
+                            The visa extension fee shall be borne by the foreigner.
+                        </li>
+                        <li>
+                            Documents to be provided by the institute shall be given by the Academic/International
+                            Relations
+                            office.
+                        </li>
+                        <li>
+                            Visa extension request is to be made 60 days before the visa expiry.
+                        </li>
+                        <li>
+                            The International Relations office is not responsible for any issues faced during visa
+                            extension if
+                            it is done directly by the foreigner without the knowledge of the International Relations
+                            office.
+                        </li>
+                        <li>
+                            If not informed, the International Relations office is not answerable to the e-FRRO in case
+                            of any
+                            overstay by the foreigner.
+                        </li>
                   <li><a href="https://indianfrro.gov.in/eservices/home.jsp" style={{ color: "blue" }}>Click Here to Visit FRRO</a></li>
                 </ul>
               </div>
