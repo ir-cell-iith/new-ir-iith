@@ -11,7 +11,7 @@ import Gallery from "./pages/gallery";
 import Download from "./pages/download.jsx";
 import Collab from "./pages/collab.jsx";
 import Opportunity from "./pages/opportunity.jsx";
-
+import RamanChaprak from "./pages/ramanChaprak.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -86,6 +86,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/downloads" element={<Download />} />
           <Route path="/opportunity" element={<Opportunity />} />
+          <Route path="/ramanChaprak" element={<RamanChaprak />} />
           <Route path="/collab" element={<Collab />} />
           <Route path="/intadm" element={<IntAdm />} /> 
 

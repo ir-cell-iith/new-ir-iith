@@ -438,7 +438,6 @@ function ContactsHome(){
           color:"#ffffff",
           fontWeight:"500",
           marginBottom:"20px"
-          
         },
         contacts: {
           display: 'flex',
