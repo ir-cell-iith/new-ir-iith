@@ -23,17 +23,17 @@ const opportunities = [
   },
   {
     title: "Swiss Government Excellence Scholarships 2024-2025",
-    link: "/swissGov.html",
+    link: "/swissGov",
   },
   {
     title:
       "France Excellence Charpak Exchange Scholarship 2024 (Spring Session)",
-    link: "/franceExchange.html",
+    link: "/franceExchange",
   },
   {
     title:
       "FICORE - University of Helsinki Competition for Students on Environmental Sensing",
-    link: "/helsinki.html",
+    link: "/helSinki",
   },
 ];
 

@@ -13,6 +13,9 @@ import Collab from "./pages/collab.jsx";
 import Opportunity from "./pages/opportunity.jsx";
 import RamanChaprak from "./pages/ramanChaprak.jsx";
 import OhioState from "./pages/ohioState.jsx";
+import SwissGov from "./pages/swissGov.jsx";
+import HelSinki from "./pages/helsinki.jsx";
+import FranceExchange from "./pages/franceExchange.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -89,6 +92,9 @@ function App() {
           <Route path="/opportunity" element={<Opportunity />} />
           <Route path="/ramanChaprak" element={<RamanChaprak />} />
           <Route path="/ohioState" element={<OhioState/>}/>
+          <Route path="/swissGov" element={<SwissGov/>}/>
+          <Route path="/franceExchange" element={<FranceExchange/>}/>
+          <Route path="/helSinki" element={<HelSinki/>}/>
           <Route path="/collab" element={<Collab />} />
           <Route path="/intadm" element={<IntAdm />} /> 
 
