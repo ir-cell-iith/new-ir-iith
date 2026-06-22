@@ -19,7 +19,7 @@ const opportunities = [
   {
     title:
       "Ohio State University's Research Internship for Young Academics (RIYA)",
-    link: "/ohioState.html",
+    link: "/ohioState",
   },
   {
     title: "Swiss Government Excellence Scholarships 2024-2025",
