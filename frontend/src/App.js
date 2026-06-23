@@ -19,6 +19,7 @@ import FranceExchange from "./pages/franceExchange.jsx";
 import NewsPage from "./pages/news.jsx";
 import IntStudents from "./pages/international_students.jsx";
 import IithStudents from "./pages/iith_students.jsx";
+import IntFaculties from "./pages/international_faculty.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -103,6 +104,7 @@ function App() {
           <Route path="/news" element={<NewsPage/>}/>
           <Route path="/international_students" element={<IntStudents/>}/>
           <Route path="/iith_students" element={<IithStudents/>}/>
+          <Route path="/international_faculty" element={<IntFaculties/>}/>
         </Routes>
 
       </ChakraBaseProvider>
