@@ -25,6 +25,7 @@ import Iccr from "./pages/iccr.jsx";
 import First from "./pages/first.jsx";
 import Asean from "./pages/asean.jsx";
 import Deakin from "./pages/deakin.jsx";
+import NotFound from "./pages/404.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -115,6 +116,7 @@ function App() {
           <Route path="/first" element={<First/>}/>
           <Route path="/asean" element={<Asean/>}/>
           <Route path="/deakin" element={<Deakin/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
 
       </ChakraBaseProvider>

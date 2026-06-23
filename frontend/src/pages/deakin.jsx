@@ -11,11 +11,10 @@ export default function Deakin() {
       {isMobile && MobileNavbar()}
       {!isMobile && NavBar()}
 
-<section className="defaultSection mx-8 mb-8">
-  <div className="container-fluid">
-    <div className="row">
-   
-          <div className="w-full text-center py-12">
+      <section className="defaultSection mx-8 mb-8">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="w-full text-center py-12">
               <h2 className="text-4xl font-lg text-gray-900">
                 IITH-DEAKIN JOINT DOCTORAL PROGRAM (JDP)
               </h2>
@@ -30,184 +29,193 @@ export default function Deakin() {
                 <div className="w-40 h-1 bg-purple-200 mt-3 rounded-full"></div>
               </div>
             </div>
-        
-   <div className="col-lg-12 bg-[#f5f5f5] px-8 py-8">
-  <div className="textBox text-[16px] leading-9">
-    <p>
-      Indian Institute of Technology Hyderabad (IITH) is one of the six new
-      Indian Institutes of Technology established by the Government of India in
-      2008. In a short span of 12 years, the institute built on an imposing
-      578-acre campus and has been ranked among the top 10 institutes for four
-      consecutive years in the NIRF released by the Ministry of Education, GoI.
-      IITH was also ranked under Top #10 in the recent edition ARIIA on
-      indicators related to ‘Innovation and Entrepreneurship Development’ among
-      students and faculties. IIT Hyderabad has 255 full-time faculties, 4000+
-      students on roll of whom 20 percent are women, nearly 200
-      state-of-the-art laboratories and five research and entrepreneurship
-      centres. The Institute has a strong research focus with more than Rs. 500
-      crore of sanctioned research funding while PhD scholars account for about
-      30% of total student strength. IITH students and faculty are at the
-      forefront of innovation with more than 6081 research publications and
-      100+ patent disclosures, 400+ sponsored/consultancy projects and 50
-      industry &amp; academic collaborations. IITH is creating a unique
-      holistic educational ecosystem that offers interactive learning, a highly
-      flexible academic structure, cutting-edge research, strong industry
-      collaboration, and entrepreneurship.
-    </p>
 
-    <p className="mt-6">
-      To know more, please visit:{" "}
-      <a
-        href="https://iith.ac.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:underline"
-      >
-        https://iith.ac.in/
-      </a>{" "}
-      &amp;{" "}
-      <a
-        href="https://ircell.iith.ac.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:underline"
-      >
-        https://ircell.iith.ac.in/
-      </a>
-    </p>
-  </div>
-</div>
-    {/* About Deakin University */}
-<div className="w-full bg-[#f0f0f0] px-8 py-8">
-  <h2 className="text-3xl font-medium text-[#0b1f4d]">
-    About Deakin University
-  </h2>
-  <div className="mt-3 h-1 w-52 rounded-full bg-[#d9c8f3]" />
-</div>
+            <div className="col-lg-12 bg-[#f5f5f5] px-8 py-8">
+              <div className="textBox text-[16px] leading-9">
+                <p>
+                  Indian Institute of Technology Hyderabad (IITH) is one of the
+                  six new Indian Institutes of Technology established by the
+                  Government of India in 2008. In a short span of 12 years, the
+                  institute built on an imposing 578-acre campus and has been
+                  ranked among the top 10 institutes for four consecutive years
+                  in the NIRF released by the Ministry of Education, GoI. IITH
+                  was also ranked under Top #10 in the recent edition ARIIA on
+                  indicators related to ‘Innovation and Entrepreneurship
+                  Development’ among students and faculties. IIT Hyderabad has
+                  255 full-time faculties, 4000+ students on roll of whom 20
+                  percent are women, nearly 200 state-of-the-art laboratories
+                  and five research and entrepreneurship centres. The Institute
+                  has a strong research focus with more than Rs. 500 crore of
+                  sanctioned research funding while PhD scholars account for
+                  about 30% of total student strength. IITH students and faculty
+                  are at the forefront of innovation with more than 6081
+                  research publications and 100+ patent disclosures, 400+
+                  sponsored/consultancy projects and 50 industry &amp; academic
+                  collaborations. IITH is creating a unique holistic educational
+                  ecosystem that offers interactive learning, a highly flexible
+                  academic structure, cutting-edge research, strong industry
+                  collaboration, and entrepreneurship.
+                </p>
 
-<div className="w-full bg-[#f5f5f5] px-8 py-10">
-  <p className="text-[20px] leading-[2.3] text-black">
-    Established in 1974, Deakin University is one of Australia's leading
-    tertiary education providers and is ranked in the top 1% of world
-    universities (ARWU). It has won numerous awards and teaches over 60,000
-    students each year offering students world-class programs and endless
-    opportunities. Deakin University offers world-class courses delivered from
-    14 schools, across 4 faculties. With 78,000+ high-achieving online
-    graduates, it is the #1 university careers service in Australia &amp; the
-    #1 university in Victoria for student satisfaction. Deakin University was
-    the first international education provider to set up an office in India in
-    1994.
-  </p>
+                <p className="mt-6">
+                  To know more, please visit:{" "}
+                  <a
+                    href="https://iith.ac.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    https://iith.ac.in/
+                  </a>{" "}
+                  &amp;{" "}
+                  <a
+                    href="https://ircell.iith.ac.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    https://ircell.iith.ac.in/
+                  </a>
+                </p>
+              </div>
+            </div>
+            {/* About Deakin University */}
+            <div className="w-full bg-[#f0f0f0] px-8 py-8">
+              <h2 className="text-3xl font-medium text-[#0b1f4d]">
+                About Deakin University
+              </h2>
+              <div className="mt-3 h-1 w-52 rounded-full bg-[#d9c8f3]" />
+            </div>
 
-  <p className="mt-6 text-[20px] leading-[2.3] text-black">
-    To know more, please visit:{" "}
-    <a
-      href="https://www.deakin.edu.au/about-deakin"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 underline"
-    >
-      https://www.deakin.edu.au/about-deakin
-    </a>
-  </p>
-</div>
+            <div className="w-full bg-[#f5f5f5] px-8 py-10">
+              <p className="text-[20px] leading-[2.3] text-black">
+                Established in 1974, Deakin University is one of Australia's
+                leading tertiary education providers and is ranked in the top 1%
+                of world universities (ARWU). It has won numerous awards and
+                teaches over 60,000 students each year offering students
+                world-class programs and endless opportunities. Deakin
+                University offers world-class courses delivered from 14 schools,
+                across 4 faculties. With 78,000+ high-achieving online
+                graduates, it is the #1 university careers service in Australia
+                &amp; the #1 university in Victoria for student satisfaction.
+                Deakin University was the first international education provider
+                to set up an office in India in 1994.
+              </p>
 
-{/* About the Program */}
-<div className="w-full bg-[#f0f0f0] px-8 py-8">
-  <h2 className="text-3xl font-medium text-[#0b1f4d]">
-    About the Program
-  </h2>
-  <div className="mt-3 h-1 w-52 rounded-full bg-[#d9c8f3]" />
-</div>
+              <p className="mt-6 text-[20px] leading-[2.3] text-black">
+                To know more, please visit:{" "}
+                <a
+                  href="https://www.deakin.edu.au/about-deakin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline"
+                >
+                  https://www.deakin.edu.au/about-deakin
+                </a>
+              </p>
+            </div>
 
-<div className="w-full bg-[#f5f5f5] px-8 py-10">
-  <p className="text-[20px] leading-[2.3] text-black">
-    IITH and Deakin University are offering a joint doctoral program for bright
-    and motivated students to work on frontier areas of science and technology.
-    The candidates admitted to this program with MTech/ME will get their PhD
-    degree from both Deakin and IITH. Candidates joining with BTech/BE will
-    receive a dual degree (MTech from IITH and PhD from both Deakin and IITH).
-    Candidate(s) chosen for this Joint Doctoral Program will spend up to 12
-    months at Deakin depending upon the research requirements.
-  </p>
-</div>
-     {/* Fellowship Duration */}
-<div className="w-full bg-[#f0f0f0] px-8 py-6">
-  <h2 className="text-2xl font-medium text-[#0b1f4d]">
-    Fellowship Duration: <span className="font-normal">4 Years</span>
-  </h2>
-</div>
+            {/* About the Program */}
+            <div className="w-full bg-[#f0f0f0] px-8 py-8">
+              <h2 className="text-3xl font-medium text-[#0b1f4d]">
+                About the Program
+              </h2>
+              <div className="mt-3 h-1 w-52 rounded-full bg-[#d9c8f3]" />
+            </div>
 
-{/* Eligibility */}
-<div className="w-full bg-[#f0f0f0] px-8 py-8">
-  <h2 className="text-3xl font-medium text-[#0b1f4d]">
-    Eligibility
-  </h2>
-  <div className="mt-3 h-1 w-40 rounded-full bg-[#d9c8f3]" />
-</div>
+            <div className="w-full bg-[#f5f5f5] px-8 py-10">
+              <p className="text-[20px] leading-[2.3] text-black">
+                IITH and Deakin University are offering a joint doctoral program
+                for bright and motivated students to work on frontier areas of
+                science and technology. The candidates admitted to this program
+                with MTech/ME will get their PhD degree from both Deakin and
+                IITH. Candidates joining with BTech/BE will receive a dual
+                degree (MTech from IITH and PhD from both Deakin and IITH).
+                Candidate(s) chosen for this Joint Doctoral Program will spend
+                up to 12 months at Deakin depending upon the research
+                requirements.
+              </p>
+            </div>
+            {/* Fellowship Duration */}
+            <div className="w-full bg-[#f0f0f0] px-8 py-6">
+              <h2 className="text-2xl font-medium text-[#0b1f4d]">
+                Fellowship Duration:{" "}
+                <span className="font-normal">4 Years</span>
+              </h2>
+            </div>
 
-<div className="w-full bg-[#f5f5f5] px-8 py-10">
-  <ol className="list-decimal space-y-6 pl-8 text-[20px] leading-[2] text-black">
-    <li>
-      BE/B.Tech in the relevant branches of science/engineering with a CGPA of
-      <strong> 8.5 </strong>
-      (on a 10-point scale) or equivalent for the general category.
-      Relaxation will be provided for other categories as per Government of
-      India norms. Applicants should have a valid GATE score. The GATE
-      requirement may be waived for students from IITs and NITs.
-    </li>
+            {/* Eligibility */}
+            <div className="w-full bg-[#f0f0f0] px-8 py-8">
+              <h2 className="text-3xl font-medium text-[#0b1f4d]">
+                Eligibility
+              </h2>
+              <div className="mt-3 h-1 w-40 rounded-full bg-[#d9c8f3]" />
+            </div>
 
-    <li>
-      M.Des/M.Sc/M.Tech in the relevant branch of
-      design/science/engineering with a CGPA of
-      <strong> 8.5 </strong>
-      (on a 10-point scale) or equivalent for the general category.
-      Relaxation will be provided for other categories as per Government of
-      India norms.
-    </li>
-  </ol>
-</div>
+            <div className="w-full bg-[#f5f5f5] px-8 py-10">
+              <ol className="list-decimal space-y-6 pl-8 text-[20px] leading-[2] text-black">
+                <li>
+                  BE/B.Tech in the relevant branches of science/engineering with
+                  a CGPA of
+                  <strong> 8.5 </strong>
+                  (on a 10-point scale) or equivalent for the general category.
+                  Relaxation will be provided for other categories as per
+                  Government of India norms. Applicants should have a valid GATE
+                  score. The GATE requirement may be waived for students from
+                  IITs and NITs.
+                </li>
 
-{/* Research Thrust Areas */}
-<div className="w-full bg-[#f0f0f0] px-8 py-8">
-  <h2 className="text-3xl font-medium text-[#0b1f4d]">
-    Research Thrust Areas under IITH–Deakin Joint Doctoral Program
-  </h2>
-  <div className="mt-3 h-1 w-72 rounded-full bg-[#d9c8f3]" />
-</div>
+                <li>
+                  M.Des/M.Sc/M.Tech in the relevant branch of
+                  design/science/engineering with a CGPA of
+                  <strong> 8.5 </strong>
+                  (on a 10-point scale) or equivalent for the general category.
+                  Relaxation will be provided for other categories as per
+                  Government of India norms.
+                </li>
+              </ol>
+            </div>
 
-<div className="w-full bg-[#f5f5f5] px-8 py-10">
-  <p className="mb-6 text-[20px] leading-[2] text-black">
-    The Joint Doctoral Program (JDP) seeks to recruit research scholars under
-    the following thematic areas (but is not limited to these):
-  </p>
+            {/* Research Thrust Areas */}
+            <div className="w-full bg-[#f0f0f0] px-8 py-8">
+              <h2 className="text-3xl font-medium text-[#0b1f4d]">
+                Research Thrust Areas under IITH–Deakin Joint Doctoral Program
+              </h2>
+              <div className="mt-3 h-1 w-72 rounded-full bg-[#d9c8f3]" />
+            </div>
 
-  <ol className="list-decimal space-y-5 pl-8 text-[20px] leading-[2] text-black">
-    <li>
-      Critical Technology (Artificial Intelligence, Machine Learning,
-      Cyber Security &amp; Data Science)
-    </li>
+            <div className="w-full bg-[#f5f5f5] px-8 py-10">
+              <p className="mb-6 text-[20px] leading-[2] text-black">
+                The Joint Doctoral Program (JDP) seeks to recruit research
+                scholars under the following thematic areas (but is not limited
+                to these):
+              </p>
 
-    <li>
-      Future Sustainable Infrastructure (Energy, Smart Mobility,
-      Transportation, Waste Management, Sustainability &amp; Climate Change)
-    </li>
+              <ol className="list-decimal space-y-5 pl-8 text-[20px] leading-[2] text-black">
+                <li>
+                  Critical Technology (Artificial Intelligence, Machine
+                  Learning, Cyber Security &amp; Data Science)
+                </li>
 
-    <li>
-      Healthcare Technologies (Sensors and Devices, Robotics &amp;
-      Nanotechnology)
-    </li>
+                <li>
+                  Future Sustainable Infrastructure (Energy, Smart Mobility,
+                  Transportation, Waste Management, Sustainability &amp; Climate
+                  Change)
+                </li>
 
-    <li>
-      Materials &amp; Smart Manufacturing (Additive Manufacturing)
-    </li>
+                <li>
+                  Healthcare Technologies (Sensors and Devices, Robotics &amp;
+                  Nanotechnology)
+                </li>
 
-    <li>
-      Bio-Inspired Processes and Systems (Biotechnology)
-    </li>
-  </ol>
-</div>
-     {/* <div className="col-lg-12" style={{ backgroundColor: "#f5f5f5" }}>
+                <li>
+                  Materials &amp; Smart Manufacturing (Additive Manufacturing)
+                </li>
+
+                <li>Bio-Inspired Processes and Systems (Biotechnology)</li>
+              </ol>
+            </div>
+            {/* <div className="col-lg-12" style={{ backgroundColor: "#f5f5f5" }}>
   <div className="subSectionHeading">
     <h3>Departments Offering</h3>
     <hr />
@@ -225,25 +233,26 @@ export default function Deakin() {
   </div>
 </div> */}
 
-<div className="w-full bg-[#f0f0f0] px-8 py-8">
-  <h2 className="text-3xl font-medium text-[#0b1f4d]">
-    Financial Assistance
-  </h2>
-  <div className="mt-3 h-1 w-56 rounded-full bg-[#d9c8f3]" />
-</div>
+            <div className="w-full bg-[#f0f0f0] px-8 py-8">
+              <h2 className="text-3xl font-medium text-[#0b1f4d]">
+                Financial Assistance
+              </h2>
+              <div className="mt-3 h-1 w-56 rounded-full bg-[#d9c8f3]" />
+            </div>
 
-<div className="w-full bg-[#f5f5f5] px-8 py-10">
-  <p className="text-[20px] leading-[2] text-black">
-    IITH will provide the regular PhD fellowship to the students during their
-    stay at IITH and when the students travel to Deakin, students will receive
-    a stipend at the rate of $A30,000 per annum for the duration of their
-    stay. In addition to the above, Deakin will provide a full tuition fee
-    waiver for up to 4 years and a top-up stipend of $A150 per month for 3
-    years while they are at IITH.
-  </p>
-</div>
+            <div className="w-full bg-[#f5f5f5] px-8 py-10">
+              <p className="text-[20px] leading-[2] text-black">
+                IITH will provide the regular PhD fellowship to the students
+                during their stay at IITH and when the students travel to
+                Deakin, students will receive a stipend at the rate of $A30,000
+                per annum for the duration of their stay. In addition to the
+                above, Deakin will provide a full tuition fee waiver for up to 4
+                years and a top-up stipend of $A150 per month for 3 years while
+                they are at IITH.
+              </p>
+            </div>
 
-{/* <div className="col-lg-12" style={{ backgroundColor: "#f5f5f5" }}>
+            {/* <div className="col-lg-12" style={{ backgroundColor: "#f5f5f5" }}>
   <div className="subSectionHeading">
     <h3>Application Procedure</h3>
     <hr />
@@ -286,26 +295,24 @@ export default function Deakin() {
     The last date of application is 24th April, 2023 / 17:00 IST.
   </div>
 </div> */}
-     <div className="w-full bg-[#f0f0f0] px-8 py-8">
-  <h2 className="text-3xl font-medium text-[#0b1f4d]">
-    Contact
-  </h2>
-  <div className="mt-3 h-1 w-32 rounded-full bg-[#d9c8f3]" />
-</div>
+            <div className="w-full bg-[#f0f0f0] px-8 py-8">
+              <h2 className="text-3xl font-medium text-[#0b1f4d]">Contact</h2>
+              <div className="mt-3 h-1 w-32 rounded-full bg-[#d9c8f3]" />
+            </div>
 
-<div className="w-full bg-[#f5f5f5] px-8 py-10">
-  <p className="text-[20px] leading-[2] text-black">
-    For any queries related to IITH-DEAKIN JDP please write to{" "}
-    <a
-      href="mailto:jdp.admission@iith.ac.in"
-      className="text-blue-600 hover:underline"
-    >
-      jdp.admission@iith.ac.in
-    </a>
-  </p>
-</div>
+            <div className="w-full bg-[#f5f5f5] px-8 py-10">
+              <p className="text-[20px] leading-[2] text-black">
+                For any queries related to IITH-DEAKIN JDP please write to{" "}
+                <a
+                  href="mailto:jdp.admission@iith.ac.in"
+                  className="text-blue-600 hover:underline"
+                >
+                  jdp.admission@iith.ac.in
+                </a>
+              </p>
+            </div>
 
-{/* <div className="col-lg-12" style={{ backgroundColor: "#f5f5f5" }}>
+            {/* <div className="col-lg-12" style={{ backgroundColor: "#f5f5f5" }}>
     <div className="subSectionHeading">
         <h3>FAQ</h3>
         <hr />
@@ -413,9 +420,9 @@ export default function Deakin() {
         </div>
     </div>
 </div> */}
-    </div>
-  </div>
-</section>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
