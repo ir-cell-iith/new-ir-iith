@@ -16,6 +16,7 @@ import OhioState from "./pages/ohioState.jsx";
 import SwissGov from "./pages/swissGov.jsx";
 import HelSinki from "./pages/helsinki.jsx";
 import FranceExchange from "./pages/franceExchange.jsx";
+import NewsPage from "./pages/news.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -97,7 +98,7 @@ function App() {
           <Route path="/helSinki" element={<HelSinki/>}/>
           <Route path="/collab" element={<Collab />} />
           <Route path="/intadm" element={<IntAdm />} /> 
-
+          <Route path="/news" element={<NewsPage/>}/>
         </Routes>
 
       </ChakraBaseProvider>

@@ -40,28 +40,32 @@ export default function FranceExchange() {
                   welcomes students to apply if there are any existing exchange
                   partnerships with French institutions for the spring session.
                 </p>
-              <div className="w-24 h-1 bg-[#c9c5df] mt-4"></div>
-            </div>
-            <div className="bg-[#f0f0f0] px-8 py-8 ">
+                <div className="w-24 h-1 bg-[#c9c5df] mt-4"></div>
+              </div>
+              <div className="bg-[#f0f0f0] px-8 py-8 ">
                 <h3 className="text-[36px] font-semibold text-[#1b2942] ">
-                Information on French Partners:</h3>
+                  Information on French Partners:
+                </h3>
                 <hr />
-              <div className="w-24 h-1 bg-[#c9c5df] mt-4"></div></div>
+                <div className="w-24 h-1 bg-[#c9c5df] mt-4"></div>
+              </div>
             </div>
             <div className="bg-[#f5f5f5] px-8 py-8 mx-8">
-                <p className="text-[20px] leading-[1.8] text-[#1b2942]">
+              <p className="text-[20px] leading-[1.8] text-[#1b2942]">
                 For IITH French partners, click [link] and find the IITs -
                 French Institutes Consortium MoU for you to choose the French
                 Institute to apply for the Exchange Program.
               </p>
             </div>
             <div className="bg-[#f0f0f0] px-8 py-8 mx-8">
-                <h3 className="text-[36px] font-semibold text-[#1b2942] ">Charpak Exchange Scholarship 2024:</h3>
-                <hr />
+              <h3 className="text-[36px] font-semibold text-[#1b2942] ">
+                Charpak Exchange Scholarship 2024:
+              </h3>
+              <hr />
               <div className="w-24 h-1 bg-[#c9c5df] mt-4"></div>
             </div>
-             <div className="bg-[#f5f5f5] px-8 py-8 mx-8">
-                <p className="text-[20px] leading-[1.8] text-[#1b2942]">
+            <div className="bg-[#f5f5f5] px-8 py-8 mx-8">
+              <p className="text-[20px] leading-[1.8] text-[#1b2942]">
                 Exchange scholarship 2024 (spring session) Call for Application
               </p>
             </div>
