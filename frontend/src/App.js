@@ -26,6 +26,7 @@ import First from "./pages/first.jsx";
 import Asean from "./pages/asean.jsx";
 import Deakin from "./pages/deakin.jsx";
 import NotFound from "./pages/404.jsx";
+import PgSelfFin from "./pages/pg_self_financing_program.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -36,6 +37,7 @@ import {
 import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
 import Team from "./pages/team.jsx";
 import IntAdm from "./pages/intadm.jsx";
+import PgSelf from "./pages/pg_self_financing_program.jsx";
 
 const { Button } = chakraTheme.components;
 
@@ -117,6 +119,7 @@ function App() {
           <Route path="/asean" element={<Asean/>}/>
           <Route path="/deakin" element={<Deakin/>}/>
           <Route path="*" element={<NotFound/>}/>
+          <Route path="/pgself" element={<PgSelfFin/>}/>
         </Routes>
 
       </ChakraBaseProvider>
