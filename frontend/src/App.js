@@ -20,6 +20,7 @@ import NewsPage from "./pages/news.jsx";
 import IntStudents from "./pages/international_students.jsx";
 import IithStudents from "./pages/iith_students.jsx";
 import IntFaculties from "./pages/international_faculty.jsx";
+import SutJdp from "./pages/iith_sut_JDP.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -105,6 +106,7 @@ function App() {
           <Route path="/international_students" element={<IntStudents/>}/>
           <Route path="/iith_students" element={<IithStudents/>}/>
           <Route path="/international_faculty" element={<IntFaculties/>}/>
+          <Route path="/iith-sut-JDP" element={<SutJdp/>}/>
         </Routes>
 
       </ChakraBaseProvider>
