@@ -27,6 +27,7 @@ import Asean from "./pages/asean.jsx";
 import Deakin from "./pages/deakin.jsx";
 import NotFound from "./pages/404.jsx";
 import PgSelfFin from "./pages/pg_self_financing_program.jsx";
+import PhdSelfFin from "./pages/phd_self_finance_program.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -120,6 +121,7 @@ function App() {
           <Route path="/deakin" element={<Deakin/>}/>
           <Route path="*" element={<NotFound/>}/>
           <Route path="/pgself" element={<PgSelfFin/>}/>
+          <Route path="/phdself" element={<PhdSelfFin/>}/>
         </Routes>
 
       </ChakraBaseProvider>
