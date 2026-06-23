@@ -2,11 +2,14 @@ import React from "react";
 import ircelllogo from "../components/icons/ircellLogo.png";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
-
+import { isMobile } from "react-device-detect";
+import MobileNavbar from "../components/mobileNavbar";
 export default function Collab() {
     return(
         <div className="flex flex-col justify-center  text-center align-middle text-2xl text-black">
-            <NavBar />
+            {isMobile && MobileNavbar()}
+        {!isMobile && NavBar()}
+
             <>
   
   {/* IC Section */}
