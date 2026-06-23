@@ -24,6 +24,7 @@ import SutJdp from "./pages/iith_sut_JDP.jsx";
 import Iccr from "./pages/iccr.jsx";
 import First from "./pages/first.jsx";
 import Asean from "./pages/asean.jsx";
+import Deakin from "./pages/deakin.jsx";
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -113,6 +114,7 @@ function App() {
           <Route path="/iccr" element={<Iccr/>}/>
           <Route path="/first" element={<First/>}/>
           <Route path="/asean" element={<Asean/>}/>
+          <Route path="/deakin" element={<Deakin/>}/>
         </Routes>
 
       </ChakraBaseProvider>
