@@ -14,13 +14,11 @@ export default function IntFaculties() {
       <section className="defaultSection mx-8 mb-8">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-12">
-              <div className="sectionHeading text-center py-8">
-                <h2 className="text-[48px] font-bold text-gray-900">
-                  International Collaboration and Mobility
-                </h2>
-                <div className="w-64 h-1 bg-purple-200 mx-auto mt-4 rounded-full"></div>
-              </div>
+            <div className="w-full text-center py-12">
+              <h2 className="text-4xl font-lg text-gray-900">
+                International Collaboration and Mobility
+              </h2>
+              <div className="w-72 h-1 bg-purple-200 mx-auto mt-4 rounded-full"></div>
             </div>
 
             <div className="col-lg-12 bg-[#f0f0f0] px-8 py-6">
