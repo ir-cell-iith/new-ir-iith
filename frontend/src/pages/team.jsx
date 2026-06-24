@@ -18,19 +18,19 @@ import React from 'react';
 
 import { useState, useEffect } from 'react';
 import { isMobile } from "react-device-detect";
-import jicahome from "../components/images/jicahome.png";
+// import jicahome from "../components/images/jicahome.png";
 import MobileNavbar from "../components/mobileNavbar.jsx";
 import NavBar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
 
-import tarunkanti from "../components/images/tarunkanti.png";
+// import tarunkanti from "../components/images/tarunkanti.png";
 import dean from "../components/images/dean.png";
 import emailicon from "../components/images/emailicon.png";
 
 
-import {depData, studentData} from "../components/team/data.js";
-
-import { Button} from "@chakra-ui/react";
+import {depData} from "../components/team/data.js";
+// import { studentData} from "../components/team/data.js";
+// import { Button} from "@chakra-ui/react";
 
 
 function AboutHome() {
@@ -57,22 +57,22 @@ function AboutHome() {
         }, 3000); // Execute every 4 seconds (adjust as needed)
     
         return () => clearInterval(intervalId);
-      }, []);
+      }, [carouselImages.length]);
 
     
-    const statsData = [
-        { number: '150+', label: 'Outgoing Students' },
-        { number: '50+', label: 'Incoming Students' },
-        { number: '60+', label: 'Seminars' },
-        { number: '80+', label: 'Partners' },
-      ];
+    // const statsData = [
+    //     { number: '150+', label: 'Outgoing Students' },
+    //     { number: '50+', label: 'Incoming Students' },
+    //     { number: '60+', label: 'Seminars' },
+    //     { number: '80+', label: 'Partners' },
+    //   ];
     
     let maxW = "20vw";
     let imgW = "468px";
 
     if(isMobile){
         maxW = "60vw";
-        imgW = "100vw";
+        // imgW = "100vw";
     }
 
     return (
@@ -163,6 +163,7 @@ function Temp(){
         <div>
             <img
             src={dean}
+            alt="dean image"
             preload="true"
             style={{width:"100vw", height:"auto"}}
             >
@@ -193,18 +194,18 @@ function Department(){
                 <span style={{width:"100%"}}>&nbsp;</span>
 
                 {depData.map((depData, index) => (
-                <div style={{width:"auto",display:"flex",padding:"20px", boxShadow:"0 0 7px 0 #666666", borderRadius:"10px", margin:"1vw", width:"40vw"}} key={index}>
+                <div style={{display:"flex",padding:"20px", boxShadow:"0 0 7px 0 #666666", borderRadius:"10px", margin:"1vw", width:"40vw"}} key={index}>
                     <div className="flex flex-wrap justify-center align-middle items-center">  
                         <div className="p-2">
                             <div style={{fontSize:"1.75rem", color:"#F73A48", backgroundColor:"#FFD6D6", padding:"0.5rem", borderRadius:"8px", maxWidth:"20vw"}}>{depData.dep}</div>
                             <div style={{fontSize:"2rem", fontWeight:"600"}}>{depData.name}</div>
                             <div style={{fontSize:"1.8rem", fontWeight:"400"}}>{depData.position}</div>
-                            <a href={depData.email}><img src={emailicon} style={{width:"40px", height:"auto"}}></img></a>
+                            <a href={depData.email}><img src={emailicon} alt="email icon" style={{width:"40px", height:"auto"}}></img></a>
                         </div> 
                     </div>
                     <span style={{width:"10vw"}}>&nbsp;</span>
                     <div className="flex flex-col justify-center">
-                        <img src={depData.image} alt="image" loading="lazy" style={{width:"250px",height:"auto", float:"right", borderRadius:"10px"}}></img>
+                        <img src={depData.image} alt="depdata image" loading="lazy" style={{width:"250px",height:"auto", float:"right", borderRadius:"10px"}}></img>
                     </div>
                 </div>
                 ))}
@@ -236,17 +237,17 @@ function MobileDep(){
                 <span style={{width:"100%"}}>&nbsp;</span>
 
                 {depData.map((depData, index) => (
-                <div style={{width:"auto",display:"flex",padding:"10px", boxShadow:"0 0 7px 0 #666666", borderRadius:"10px", width:"95vw", marginBottom:"3vh"}} key={index}>
+                <div style={{width:"95vw",display:"flex",padding:"10px", boxShadow:"0 0 7px 0 #666666", borderRadius:"10px",marginBottom:"3vh"}} key={index}>
                     <div className="flex flex-wrap justify-center align-middle items-center">  
                         <div className="p-2">
                             <div style={{fontSize:"1rem", color:"#F73A48", backgroundColor:"#FFD6D6", padding:"0.5rem", borderRadius:"8px", maxWidth:"40vw"}}>{depData.dep}</div>
                             <div style={{fontSize:"1rem", fontWeight:"600"}}>{depData.name}</div>
                             <div style={{fontSize:"1.1rem", fontWeight:"400"}}>{depData.position}</div>
-                            <a href={depData.email}><img src={emailicon} style={{width:"40px", height:"auto"}}></img></a>
+                            <a href={depData.email}><img src={emailicon} alt="email icon" style={{width:"40px", height:"auto"}}></img></a>
                         </div> 
                     </div>
                     
-                    <img src={depData.image} alt="image" style={{width:"35%",height:"auto", float:"right", borderRadius:"10px"}}></img>
+                    <img src={depData.image} alt=" dep data image" style={{width:"35%",height:"auto", float:"right", borderRadius:"10px"}}></img>
                     
                 </div>
                 ))}
