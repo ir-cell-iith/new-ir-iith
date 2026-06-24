@@ -111,11 +111,13 @@ const Partners = () => {
                 in={expandedCard === index}
                 startingHeight={0}
               >
-                <Box padding="10px">
-                  <Text>
-                    {p.partnership || "Partnership details coming soon"}
-                  </Text>
-                </Box>
+                <Text>
+  {p.partnership
+    ? p.partnership.split(",").map((item, i) => (
+        <div key={i}>• {item.trim()}</div>
+      ))
+    : "Partnership details coming soon"}
+</Text>
               </Collapse>
             </Box>
           ))}
