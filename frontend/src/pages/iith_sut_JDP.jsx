@@ -1,5 +1,5 @@
 import React from "react";
-import ircelllogo from "../components/icons/ircellLogo.png";
+// import ircelllogo from "../components/icons/ircellLogo.png";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 import { isMobile } from "react-device-detect";
@@ -7,8 +7,7 @@ import MobileNavbar from "../components/mobileNavbar";
 export default function SutJdp() {
   return (
     <div className="flex flex-col justify-center   align-middle text-2xl text-black">
-      {isMobile && MobileNavbar()}
-      {!isMobile && NavBar()}
+       {isMobile ? <MobileNavbar /> : <NavBar />}
 
       <section className="defaultSection mx-8 mb-8">
         <div className="container-fluid">

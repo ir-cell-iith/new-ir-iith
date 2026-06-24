@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 import NavBar from '../components/navbar';
 import Footer from '../components/footer';
 import bgiith from "../components/images/bg_life_iith.png";
 import charminar from "../components/images/6f049-hyderabad 1.png";
 import { isMobile } from 'react-device-detect';
 import MobileNavbar from '../components/mobileNavbar';
-import life from "../components/downloadables/Group 244.pdf";
+import life from "../components/downloadables/Group244.pdf";
 
 export default function LifeAtIITH() {
     return (
@@ -20,8 +20,7 @@ export default function LifeAtIITH() {
                 
             </div>
             <div style={{position:"sticky", top:"0", marginTop:"100vh"}}>
-                {isMobile && MobileNavbar()}
-                {!isMobile && NavBar()}
+                 {isMobile ? <MobileNavbar /> : <NavBar />}
                 
             </div>
 

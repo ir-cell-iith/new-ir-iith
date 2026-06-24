@@ -9,14 +9,13 @@ export default function Gallery() {
   return (
     <div>
       <div style={{position:"sticky", top:"0"}}>
-                {isMobile && MobileNavbar()}
-                {!isMobile && NavBar()}
+                {isMobile ? <MobileNavbar /> : <NavBar />}
                 
       </div>
       <h1 style={{fontSize:"2rem", fontWeight:"600", marginLeft:"15vw"}}>Welcome to Gallery</h1>
       <br /><br />
-      <div className="flex flex-col justify-center items-ceter align-middle" style={{width:"40vw", height:"auto", marginLeft:"auto", marginRight:"auto"}}>
-      <img src={gallimg}></img>
+      <div className="flex flex-col justify-center items-center align-middle" style={{width:"40vw", height:"auto", marginLeft:"auto", marginRight:"auto"}}>
+      <img src={gallimg} alt="gall image"/>
       </div>
       <br /><br /><br />
       <Footer />

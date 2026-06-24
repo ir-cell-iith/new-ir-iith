@@ -162,9 +162,7 @@ const visitors = [
   export default function Visitors() {
     return (
       <div className="gap-4 flex flex-col items-center px-4">
-        {isMobile && MobileNavbar()}
-      {!isMobile && NavBar()}
-
+        {isMobile ? <MobileNavbar /> : <NavBar />}
        
         <h1 className="text-3xl font-bold mb-12">Visitors</h1>
         {visitors.map((visitor, index) => (

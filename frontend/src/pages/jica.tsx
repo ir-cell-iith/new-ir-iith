@@ -20,8 +20,7 @@ const JicaPage = () => {
   return (
     <>
     <div style={{position:"sticky", top:"0"}}>
-                {isMobile && MobileNavbar()}
-                {!isMobile && NavBar()}
+               {isMobile ? <MobileNavbar /> : <NavBar />}
                 
       </div>
     <div className="flex flex-col items-center overflow-x-hidden" style={{padding:pad}}>
@@ -31,7 +30,7 @@ const JicaPage = () => {
         <h1 className='font-bold text-[64px] float-left'>Japan International Cooperation <br/>Agency <span className='text-[#F73A48]'>(JICA)</span></h1>
       </header>
 
-      <img className='object-cover w-full' src={jica1}/>      
+      <img className='object-cover w-full' alt="jica1 image" src={jica1}/>      
       
 
       <section className="jica-content">
@@ -71,7 +70,7 @@ const JicaPage = () => {
 
         <h2 className='font-bold text-3xl py-6' >Purpose & Activities</h2>
         <div className='grid xl:grid-cols-2 gap-12 p-2 '>
-          <img className=' object-cover rounded-[16px]' src={homecaro2}/>
+          <img className=' object-cover rounded-[16px]' alt="homecaro image" src={homecaro2}/>
         <p className='font-base text-[16px]' >
         The purpose of the FRIENDSHIP 2.0 project is to establish a sustainable platform for academic and industrial collaborations between India and Japan at IITH,
          expecting that human resources produced 
@@ -88,14 +87,14 @@ const JicaPage = () => {
         <p className='font-base text-[16px] my-5' >
         A final 10 students were selected in 2022. Nine of the successful applicants were enrolled in October 2022, and one in April 2023. Some students will enroll in the doctoral course after six months as research students, while others will directly enrol in the doctoral course to begin their research FRIENDSHIP 2.0 also offers Research Grant. The FRIENDSHIP 2.0 Research Grant aims to enhance sustainable collaboration between IIT Hyderabad (IITH) and academic institutions and/or industries in Japan in association with the FRIENDSHIP 2.0 Scholarship. Establishing academic collaboration including collaborative degree programs through a combination of research grants and long-term training programs is also one of the purposes of this grant.<br/><br/>
         FRIENDSHIP 2.0 Research Grant offers two kinds of grants in science and technology, namely (AC) academic collaboration and (IC) industry-university collaboration.</p>
-        <img className=' object-cover rounded-[16px]' src={partnerhome}/>
+        <img className=' object-cover rounded-[16px]'alt="partnerhome image" src={partnerhome}/>
         
         </div>
 
 
         <div className=''>
           <h2 className='font-bold text-3xl py-6'>The list of Joint Research Granted in 2022</h2>
-          <img className="my-8" src={jica2}/>
+          <img className="my-8" alt="jica2 image" src={jica2}/>
         </div>
         <div className=''>
           <h2 className='font-bold text-2xl py-6'>Various activities to promote India-Japan collaboration, including Japan Desk events, 
@@ -138,7 +137,7 @@ const JicaPage = () => {
         </div>
         <div className='my-24'>
           <div className='border-2 border-black rounded-lg  '>
-            <img className='rounded-lg p-12 w-auto' src={jica3}/>
+            <img className='rounded-lg p-12 w-auto' alt="jica3 image" src={jica3}/>
 
           </div>
 
@@ -150,12 +149,12 @@ const JicaPage = () => {
         <div className="row justify-content-center">
             <div className="col-lg-6">
                 <div className=" mb-2">
-                    <img src={jica4}/>
+                    <img alt="jica4 image" src={jica4}/>
                 </div>
             </div>
             <div className="col-lg-6">
                 <div >
-                    <img src={jica5}/>
+                    <img alt="jica5 image" src={jica5}/>
                 </div>
             </div>
         </div>

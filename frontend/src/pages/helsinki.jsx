@@ -8,7 +8,7 @@ import "./styles/homeStyle.css";
 export default function HelSinki() {
   return (
     <>
-      {isMobile ? <MobileNavbar /> : <NavBar />}
+        {isMobile ? <MobileNavbar /> : <NavBar />}
 
       <section className="defaultSection mb-8">
         <div className="container-fluid">

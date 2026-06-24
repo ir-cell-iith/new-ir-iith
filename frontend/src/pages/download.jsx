@@ -8,9 +8,7 @@ import { downloadables } from '../components/downloadables/data';
 export default function Download() {
   return (
     <div>
-        {isMobile && MobileNavbar()}
-                {!isMobile && NavBar()}
-                
+        {isMobile ? <MobileNavbar /> : <NavBar />}
       <br /><br /><br />
       <div className='text-center items-center'>
         <span className='float-left' style={{fontSize:"3rem", color:"#F73A48", fontWeight:"700", marginLeft:"5vw"}}>Downloads</span> <br /><br /><br /><br />

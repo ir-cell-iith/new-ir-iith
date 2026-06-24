@@ -7,7 +7,7 @@ import "./styles/homeStyle.css";
 export default function RamanChaprak() {
   return (
     <>
-      {isMobile ? <MobileNavbar /> : <NavBar />}
+        {isMobile ? <MobileNavbar /> : <NavBar />}
 
       {/* Paste ALL your converted content here.
                 Keep using:

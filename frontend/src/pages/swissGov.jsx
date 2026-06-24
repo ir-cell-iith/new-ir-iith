@@ -11,7 +11,7 @@ export default function SwissGov() {
 
       <div className="container-fluid">
         <div className="row">
-          <>
+          
             <section className="defaultSection mb-8">
               <div className="container-fluid">
                 <div className="row">
@@ -773,7 +773,7 @@ export default function SwissGov() {
                       <li>
                         Download the{" "}
                         <a
-                          href=""
+                          href="#"
                           target="_blank"
                           className="text-blue-600 hover:underline"
                         >
@@ -836,7 +836,7 @@ export default function SwissGov() {
                       <li>
                         Download{" "}
                         <a
-                          href=""
+                          href="#"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:underline"
@@ -849,7 +849,7 @@ export default function SwissGov() {
                       <li>
                         If you have questions, refer to the{" "}
                         <a
-                          href=""
+                          href="#"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:underline"
@@ -885,7 +885,7 @@ export default function SwissGov() {
                       <li>
                         Check the official{" "}
                         <a
-                          href=""
+                          href="#"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:underline"
@@ -1068,7 +1068,7 @@ export default function SwissGov() {
                 </div>
               </div>
             </section>
-          </>
+         
         </div>
       </div>
 

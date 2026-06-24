@@ -7,16 +7,16 @@ import Footer from "../components/footer.jsx";
 import news1 from "../components/images/news1.jpeg";
 import news2 from "../components/images/news2.jpeg";
 const NewsPage = () => {
-  const pad = isMobile ? "0px" : "40px";
+  // const pad = isMobile ? "0px" : "40px";
 
   return (
     <>
       {/* Navbar */}
       <div style={{ position: "sticky", top: "0", zIndex: 1000 }}>
-        {isMobile ? <MobileNavbar /> : <NavBar />}
+         {isMobile ? <MobileNavbar /> : <NavBar />}
       </div>
 
-      <>
+     
         <section className="min-h-screen bg-[#f5f5f5] py-16">
           <div className="max-w-7xl mx-auto px-6">
             {/* Heading */}
@@ -75,7 +75,7 @@ const NewsPage = () => {
             </div>
           </div>
         </section>
-      </>
+      
 
       <Footer />
     </>

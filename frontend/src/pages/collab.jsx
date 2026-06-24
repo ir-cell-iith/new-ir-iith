@@ -6,9 +6,8 @@ import { isMobile } from "react-device-detect";
 import MobileNavbar from "../components/mobileNavbar";
 export default function Collab() {
   return (
-    <div className="flex flex-col justify-center  text-center align-center text-2xl text-black">
-      {isMobile && MobileNavbar()}
-      {!isMobile && NavBar()}
+    <div className="flex flex-col justify-center  text-center align-middle text-2xl text-black">
+     {isMobile ? <MobileNavbar /> : <NavBar />}
 
       {/* IC Section */}
       <section className=" py-16">

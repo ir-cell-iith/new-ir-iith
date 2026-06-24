@@ -404,8 +404,7 @@ export default function Visa() {
   return (
     <div style={{ padding: "20px", backgroundColor: "#f8f9fa" }}>
       <div style={{ position: "sticky", top: "0", zIndex: "1000" }}>
-        {isMobile && MobileNavbar()}
-        {!isMobile && NavBar()}
+          {isMobile ? <MobileNavbar /> : <NavBar />}
       </div>
       <div className="container-fluid" style={{ padding: "40px 20px" }}>
         {/* <section className="defaultSection" style={{ marginBottom: "40px" }}> */}

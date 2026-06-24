@@ -40,8 +40,7 @@ const opportunities = [
 export default function Opportunity() {
   return (
     <>
-      {isMobile ? <MobileNavbar /> : <NavBar />}
-
+       {isMobile ? <MobileNavbar /> : <NavBar />}
       <Box
         maxW="1000px"
         mx="auto"

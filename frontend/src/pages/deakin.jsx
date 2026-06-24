@@ -8,8 +8,7 @@ import MobileNavbar from "../components/mobileNavbar";
 export default function Deakin() {
   return (
     <div className="flex flex-col justify-center  align-middle text-2xl text-black">
-      {isMobile && MobileNavbar()}
-      {!isMobile && NavBar()}
+    {isMobile ? <MobileNavbar /> : <NavBar />}
 
       <section className="defaultSection mx-8 mb-8">
         <div className="container-fluid">

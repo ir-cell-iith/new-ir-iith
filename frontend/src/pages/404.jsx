@@ -9,8 +9,7 @@ export default function NotFound() {
   return (
     <>
       <div className="flex flex-col justify-center  align-middle text-2xl text-black">
-        {isMobile && MobileNavbar()}
-        {!isMobile && NavBar()}
+         {isMobile ? <MobileNavbar /> : <NavBar />}
         <section className="min-h-[60vh] flex items-center justify-center">
           <div className="container mx-auto px-4">
             <div className="text-center">

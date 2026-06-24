@@ -1,14 +1,16 @@
 import React from "react";
-import ircelllogo from "../components/icons/ircellLogo.png";
-import NavBar from "../components/navbar";
+// import ircelllogo from "../components/icons/ircellLogo.png";
+import { isMobile } from 'react-device-detect';
+import MobileNavbar from '../components/mobileNavbar.jsx';
+import NavBar from '../components/navbar.jsx';
 import Footer from "../components/footer";
 import raquel from "../components/images/raquel.png";
 export default function IntStudents() {
   return (
     <div className="flex flex-col justify-center items-center  align-middle text-2xl text-black">
-      <NavBar />
+      
 
-      <>
+       {isMobile ? <MobileNavbar /> : <NavBar />}
         <section className="defaultSection mb-8">
           <div className="container-fluid">
             <div className="row">
@@ -453,7 +455,7 @@ export default function IntStudents() {
             </div>
           </div>
         </section>
-      </>
+      
 
       <Footer />
     </div>

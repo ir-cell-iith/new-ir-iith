@@ -7,9 +7,8 @@ import Footer from "../components/footer";
 export default function OhioState() {
   return (
     <>
-      {isMobile ? <MobileNavbar /> : <NavBar />}
-
-      <>
+        {isMobile ? <MobileNavbar /> : <NavBar />}
+      
         <section className=" mb-8">
           <div className="container-fluid">
             <div className="row">
@@ -339,7 +338,7 @@ export default function OhioState() {
             </div>
           </div>
         </section>
-      </>
+      
 
       <Footer />
     </>
