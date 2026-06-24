@@ -1,5 +1,5 @@
 import React from "react";
-import ircelllogo from "../components/icons/ircellLogo.png";
+// import ircelllogo from "../components/icons/ircellLogo.png";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 import { isMobile } from "react-device-detect";
@@ -50,7 +50,7 @@ export default function Deakin() {
                   about 30% of total student strength. IITH students and faculty
                   are at the forefront of innovation with more than 6081
                   research publications and 100+ patent disclosures, 400+
-                  sponsored/consultancy projects and 50 industry &amp; academic
+                  sponsored/consultancy projects and 50 industry & academic
                   collaborations. IITH is creating a unique holistic educational
                   ecosystem that offers interactive learning, a highly flexible
                   academic structure, cutting-edge research, strong industry
@@ -97,7 +97,7 @@ export default function Deakin() {
                 University offers world-class courses delivered from 14 schools,
                 across 4 faculties. With 78,000+ high-achieving online
                 graduates, it is the #1 university careers service in Australia
-                &amp; the #1 university in Victoria for student satisfaction.
+                & the #1 university in Victoria for student satisfaction.
                 Deakin University was the first international education provider
                 to set up an office in India in 1994.
               </p>
@@ -194,22 +194,22 @@ export default function Deakin() {
               <ol className="list-decimal space-y-5 pl-8 text-[20px] leading-[2] text-black">
                 <li>
                   Critical Technology (Artificial Intelligence, Machine
-                  Learning, Cyber Security &amp; Data Science)
+                  Learning, Cyber Security & Data Science)
                 </li>
 
                 <li>
                   Future Sustainable Infrastructure (Energy, Smart Mobility,
-                  Transportation, Waste Management, Sustainability &amp; Climate
+                  Transportation, Waste Management, Sustainability & Climate
                   Change)
                 </li>
 
                 <li>
-                  Healthcare Technologies (Sensors and Devices, Robotics &amp;
+                  Healthcare Technologies (Sensors and Devices, Robotics &
                   Nanotechnology)
                 </li>
 
                 <li>
-                  Materials &amp; Smart Manufacturing (Additive Manufacturing)
+                  Materials & Smart Manufacturing (Additive Manufacturing)
                 </li>
 
                 <li>Bio-Inspired Processes and Systems (Biotechnology)</li>

@@ -8,13 +8,15 @@ import { downloadables } from '../components/downloadables/data';
 export default function Download() {
   return (
     <div>
-      {isMobile ? <MobileNavbar /> : <NavBar />}
+        {isMobile && MobileNavbar()}
+                {!isMobile && NavBar()}
+                
       <br /><br /><br />
-      <div className='text-center itens-center'>
+      <div className='text-center items-center'>
         <span className='float-left' style={{fontSize:"3rem", color:"#F73A48", fontWeight:"700", marginLeft:"5vw"}}>Downloads</span> <br /><br /><br /><br />
-      {downloadables.map((downloadables, index) => (
+      {downloadables.map((items, index) => (
         <div key={index} style={{fontSize:"1.25rem", backgroundColor:"#1d1d1d", color:"#ffffff", padding:"1.5rem", marginBottom:"3vh", marginLeft:"auto", marginRight:"auto", maxWidth:"20vw", borderRadius:"18px"}}>
-            <a href={downloadables.link} download>{downloadables.title}</a>
+            <a href={items.link} download>{items.title}</a>
         </div>
       ))}
       </div>

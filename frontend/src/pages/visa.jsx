@@ -585,7 +585,7 @@ export default function Visa() {
                         <th style={{ padding: "10px", textAlign: "center" }}>Period for which granted</th>
                         <th style={{ padding: "10px", textAlign: "center" }}>Entry</th>
                         <th style={{ padding: "10px", textAlign: "center" }}>Documents Required with Application</th>
-                        <th style={{ padding: "10px", textAlign: "center" }}>Etendabel while in India</th>
+                        <th style={{ padding: "10px", textAlign: "center" }}>Extendabel while in India</th>
                       </tr>
                     </thead>
                     <tbody>

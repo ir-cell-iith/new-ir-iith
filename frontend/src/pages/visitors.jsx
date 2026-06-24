@@ -4,9 +4,9 @@ import MobileNavbar from "../components/mobileNavbar";
 import Footer from "../components/footer";
 import { isMobile } from "react-device-detect";
 import japanFlag from "../components/partners/Flag_of_Japan.svg 10.png";
-import usaFlag from "../components/partners/flag-usa 2.png";
-import canadaFlag from "../components/partners/canada-flag 10.png";
-import germanyFlag from "../components/partners/flag-germany 4.png";
+import usaFlag from "../components/partners/flag_usa2.png";
+import canadaFlag from "../components/partners/canada_flag10.png";
+import germanyFlag from "../components/partners/flag_germany4.png";
 import singaporeFlag from "../components/partners/Flag_of_Singapore.svg.png";
 import portlandFlag from "../components/partners/portland_flag.png";
 const visitors = [
@@ -162,7 +162,9 @@ const visitors = [
   export default function Visitors() {
     return (
       <div className="gap-4 flex flex-col items-center px-4">
-        {isMobile ? <MobileNavbar /> : <NavBar />}
+        {isMobile && MobileNavbar()}
+      {!isMobile && NavBar()}
+
        
         <h1 className="text-3xl font-bold mb-12">Visitors</h1>
         {visitors.map((visitor, index) => (

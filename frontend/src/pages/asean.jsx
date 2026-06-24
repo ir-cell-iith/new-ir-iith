@@ -1,5 +1,5 @@
 import React from "react";
-import ircelllogo from "../components/icons/ircellLogo.png";
+// import ircelllogo from "../components/icons/ircellLogo.png";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 import { isMobile } from "react-device-detect";
@@ -17,7 +17,7 @@ export default function Asean() {
           <div className="row">
             <div className="w-full text-center py-12">
               <h2 className="text-4xl font-lg text-gray-900">
-                Doctoral Fellowship in India for AEAN
+                Doctoral Fellowship in India for ASEAN
               </h2>
               <div className="w-72 h-1 bg-purple-200 mx-auto mt-4 rounded-full"></div>
             </div>
