@@ -63,8 +63,8 @@ const NavBar = () => {
             <MenuItem className='menuitem'><a href="/team"><a href="">IR Cell & Team</a></a></MenuItem>
             <MenuItem className='menuitem'><a href="/lifeatiith">Life at IITH</a></MenuItem>
             <MenuItem className='menuitem'><a href="/downloads">Downloads</a></MenuItem>
-            {/* <MenuItem className='menuitem'><a href="/opportunity">Opportunities</a></MenuItem>
-            <MenuItem className='menuitem'><a href="/collab">International <br></br>Collaboration <br></br>& Mobility</a></MenuItem> */}
+            <MenuItem className='menuitem'><a href="/opportunity">Opportunities</a></MenuItem>
+            <MenuItem className='menuitem'><a href="/collab">International <br></br>Collaboration <br></br>& Mobility</a></MenuItem>
           </MenuList>
         </Menu>
         
@@ -97,7 +97,11 @@ const NavBar = () => {
             <MenuItem className='menuitem'><a href="/visa">Visa & Immigration</a></MenuItem>
           </MenuList>
         </Menu>
-
+         <Menu>
+                   <MenuButton as={Button} onClick={() => window.location.href = "/news"}  style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>                   
+                   News
+                   </MenuButton>
+            </Menu>  
         
       </ul>
       <div className="navbar-notification">

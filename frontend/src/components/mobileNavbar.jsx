@@ -72,8 +72,8 @@ function NavDrawer(){
                 <a href="/team">-IR Cell & Team</a> <br />
                 <a href="/lifeatiith">-Life at IITH</a> <br />
                 <a href="/downloads">-Downloads</a> <br />
-                {/* <a href="/opportunity">-Opportunities</a> <br />
-                <a href="/collab">-International Collaboration & Mobility</a> */}
+                <a href="/opportunity">-Opportunities</a> <br />
+                <a href="/collab">-International Collaboration & Mobility</a>
                 <hr />
               </AccordionPanel>
             </AccordionItem>
@@ -136,6 +136,8 @@ function NavDrawer(){
             </AccordionItem>
           </Accordion>
           <hr />
+          <a href="/news">News</a>
+            <Button style={{backgroundColor:"transparent", color:"black"}}><a href="/news">News</a></Button> <br />
           <Button style={{backgroundColor:"transparent", color:"black"}}><a href="/contact">Contacts</a></Button> <br />
           <Button style={{backgroundColor:"transparent", color:"black"}}><a href="/gallery">Gallery</a></Button> <br />
           

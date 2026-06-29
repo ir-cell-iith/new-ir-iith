@@ -62,7 +62,14 @@ const NavBar = () => {
         });
     };
 
-    let contscroller = isMobile ? "750" : "3500";
+     let newsscroller = isMobile ? "750" : "3500";
+    const handlenewsScroll = () => {
+        window.scrollTo({
+            top: newsscroller,
+            behavior: "smooth",
+        });
+    };
+    let contscroller = isMobile ? "750" : "4300";
     const handleContScroll = () => {
         window.scrollTo({
             top: contscroller,
@@ -70,14 +77,14 @@ const NavBar = () => {
         });
     };
 
-    let galscroller = isMobile ? "750" : "5600";
+    let galscroller = isMobile ? "750" : "6200";
     const handlegalScroll = () => {
         window.scrollTo({
             top: galscroller,
             behavior: "smooth",
         });
     };
-
+    
     let handleFooterScroll = () => {
       window.scrollTo({
           top: document.body.scrollHeight,
@@ -110,8 +117,8 @@ const NavBar = () => {
             <MenuItem className='menuitem'><a href="/team">IR Cell & Team</a></MenuItem>
             <MenuItem className='menuitem'><a href="/lifeatiith">Life at IITH</a></MenuItem>
             <MenuItem className='menuitem'><a href="/downloads">Downloads</a></MenuItem>
-            {/* <MenuItem className='menuitem'><a href="/opportunity">Opportunities</a></MenuItem>
-            <MenuItem className='menuitem'><a href="/collab">International <br></br>Collaboration <br></br>& Mobility</a></MenuItem> */}
+            <MenuItem className='menuitem'><a href="/opportunity">Opportunities</a></MenuItem>
+            <MenuItem className='menuitem'><a href="/collab">International <br></br>Collaboration <br></br>& Mobility</a></MenuItem>
           </MenuList>
         </Menu>
         
@@ -144,7 +151,13 @@ const NavBar = () => {
             <MenuItem className='menuitem'><a href="/visa">Visa & Immigration</a></MenuItem>
           </MenuList>
         </Menu>
-
+             
+          <Menu>
+                   <MenuButton as={Button} onClick={() => window.location.href = "/news"} onMouseOver={handlenewsScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>                   
+                   News
+                   </MenuButton>
+            </Menu>
+           
         <Menu>
           <MenuButton as={Button} onMouseOver={handleContScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             Contacts
@@ -156,8 +169,9 @@ const NavBar = () => {
             Gallery
           </MenuButton>
         </Menu>
-      </ul>
-      <div className="navbar-notification">
+         
+        </ul>
+       <div className="navbar-notification">
         <img src={notificationicon} onMouseOver={handleFooterScroll} style={{width:"46px", height:"46px"}} alt="Notifications" />
         
       </div>
