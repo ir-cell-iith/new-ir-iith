@@ -5,7 +5,7 @@ import ircellLogo from "./icons/ircellLogo.png";
 import iithlogo from "./icons/iithlogo.png";
 import notificationicon from "./icons/notificationicon.png";
 import { isMobile } from 'react-device-detect';
-
+import { useNavigate } from "react-router-dom";
 import {
   Menu,
   MenuButton,
@@ -23,77 +23,54 @@ import { Button } from '@chakra-ui/react'
 const NavBar = () => {
   //Apparaently using ismobile is waste because this navbar is not visible in mobile view
   let homescroller = isMobile ? "0" : "0";
-  const handleHomeScroll = () => {
-      window.scrollTo({
-          top: homescroller,
-          behavior: "smooth",
-      });
+  const handleHoverOpen = (e) => {
+    const triggerButton = e.currentTarget;
+    const parentMenu = triggerButton.closest('.chakra-menu');
+    
+    // 1. Instantly find and close ANY other menu lists currently left open on the screen
+    document.querySelectorAll('.chakra-menu__menu-button[aria-expanded="true"]').forEach((openButton) => {
+      if (openButton !== triggerButton) {
+        // We use HTMLElement.click to cleanly shut it down natively
+          openButton.click();
+      }
+    });
+    // 2. Open our current targeted dropdown
+    if (triggerButton.getAttribute('aria-expanded') === 'false') {
+        triggerButton.click();
+    }
+  };
+  const handleClearMenus = () => {
+    document.querySelectorAll('.chakra-menu__menu-button[aria-expanded="true"]').forEach((openButton) => {
+      openButton.click();
+    });
   };
 
-  let abtscroller = isMobile ? "750" : "600";
-    const handleabtScroll = () => {
-        window.scrollTo({
-            top: abtscroller,
-            behavior: "smooth",
-        });
-    };
+  // 3. Main wrapper exit engine
+  const handleNavbarMouseLeave = () => {
+    handleClearMenus();
+  };
+
   
-    let jicascroller = isMobile ? "1150" : "1000";
-    const handlejicaScroll = () => {
-        window.scrollTo({
-            top: jicascroller,
-            behavior: "smooth",
-        });
-    };
+  const handleHomeScroll = (e) => handleHoverOpen(e);
+  const handleabtScroll = (e) => handleHoverOpen(e);
+  const handlepartScroll = (e) => handleHoverOpen(e);
+  const handleadmScroll = (e) => handleHoverOpen(e);
 
-    let partscroller = isMobile ? "1750" : "1650";
-    const handlepartScroll = () => {
-        window.scrollTo({
-            top: partscroller,
-            behavior: "smooth",
-        });
-    };
-
-    let admscroller = isMobile ? "2350" : "2320";
-    const handleadmScroll = () => {
-        window.scrollTo({
-            top: admscroller,
-            behavior: "smooth",
-        });
-    };
-
-     let newsscroller = isMobile ? "750" : "3500";
-    const handlenewsScroll = () => {
-        window.scrollTo({
-            top: newsscroller,
-            behavior: "smooth",
-        });
-    };
-    let contscroller = isMobile ? "750" : "4300";
+  const handleJicaHover = () => handleClearMenus();
+  const handleNewsHover = () => handleClearMenus();
+  const handleGalleryHover = () => handleClearMenus();
+  const handleContHover = () => handleClearMenus();
+  let contscroller = isMobile ? "750" : "4300";
     const handleContScroll = () => {
         window.scrollTo({
             top: contscroller,
             behavior: "smooth",
         });
     };
-
-    let galscroller = isMobile ? "750" : "6200";
-    const handlegalScroll = () => {
-        window.scrollTo({
-            top: galscroller,
-            behavior: "smooth",
-        });
-    };
+   const navigate = useNavigate();
     
-    let handleFooterScroll = () => {
-      window.scrollTo({
-          top: document.body.scrollHeight,
-          behavior: "smooth",
-      });
-    };
-
   return (
-    <nav className="navbar" style={{position:"sticky"}}>
+    <nav className="navbar" style={{position:"sticky"}} onMouseLeave={handleNavbarMouseLeave}>
       <div className="navbar-logo">
         <img src={iithlogo} style={{width:"10vw", height:"auto"}} alt="International Relations Cell Logo" />
         
@@ -123,13 +100,10 @@ const NavBar = () => {
         </Menu>
         
         <Menu>
-          <MenuButton as={Button} onMouseOver={handlejicaScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+          <MenuButton as={Button} onMouseOver={handleJicaHover} onClick={() => window.open("https://japandesk.iith.ac.in/", "_blank", "noopener,noreferrer")}  style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             JICA
           </MenuButton>
-          <MenuList className='menulist'>
-            <MenuItem className='menuitem'><a href="/jica">Japan International Cooperation Agency</a></MenuItem>
-            <MenuItem className='menuitem'><a href="https://www.iith.ac.in/japandesk/">JICA</a></MenuItem>
-            </MenuList>
+          
         </Menu>
 
         <Menu>
@@ -139,6 +113,7 @@ const NavBar = () => {
           <MenuList className='menulist'>
             <MenuItem className='menuitem'><a href="/Partners">Our Partners</a></MenuItem>
             <MenuItem className='menuitem'><a href="/visitors">Visitors</a></MenuItem>
+            <MenuItem className='menuitem'><a href="https://ir-cell-iith.github.io/deakin-university/">IITH-Deaken University</a></MenuItem>
           </MenuList>
         </Menu>
 
@@ -153,26 +128,32 @@ const NavBar = () => {
         </Menu>
              
           <Menu>
-                   <MenuButton as={Button} onClick={() => window.location.href = "/news"} onMouseOver={handlenewsScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>                   
+                   <MenuButton as={Button}  onMouseOver={handleNewsHover}  onClick={() => navigate("/news")}  style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>                   
                    News
                    </MenuButton>
+                     <MenuList className='menulist'>
+                     <MenuItem className='menuitem'><a href="/news"> News</a></MenuItem>
+                      </MenuList>
             </Menu>
            
         <Menu>
-          <MenuButton as={Button} onMouseOver={handleContScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+          <MenuButton as={Button} onMouseOver={handleContHover} onClick={handleContScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             Contacts
           </MenuButton>
         </Menu>
         
         <Menu>
-          <MenuButton as={Button} onMouseOver={handlegalScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+          <MenuButton as={Button} onMouseOver={handleGalleryHover} onClick={() => navigate("/gallery")} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             Gallery
           </MenuButton>
+          <MenuList className='menulist'>
+                     <MenuItem className='menuitem'><a href="/gallery"> Gallery</a></MenuItem>
+                      </MenuList>
         </Menu>
          
         </ul>
        <div className="navbar-notification">
-        <img src={notificationicon} onMouseOver={handleFooterScroll} style={{width:"46px", height:"46px"}} alt="Notifications" />
+        <img src={notificationicon}  style={{width:"46px", height:"42px"}} alt="Notifications" />
         
       </div>
     </nav>

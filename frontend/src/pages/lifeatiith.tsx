@@ -55,6 +55,7 @@ export default function LifeAtIITH() {
     );
 }
 // Old site life at iith
+
 {/* <section className="defaultSection">
   <div className="container-fluid">
     <div className="row justify-content-center">
