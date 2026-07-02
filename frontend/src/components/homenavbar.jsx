@@ -131,9 +131,6 @@ const NavBar = () => {
                    <MenuButton as={Button}  onMouseOver={handleNewsHover}  onClick={() => navigate("/news")}  style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>                   
                    News
                    </MenuButton>
-                     <MenuList className='menulist'>
-                     <MenuItem className='menuitem'><a href="/news"> News</a></MenuItem>
-                      </MenuList>
             </Menu>
            
         <Menu>
@@ -146,9 +143,7 @@ const NavBar = () => {
           <MenuButton as={Button} onMouseOver={handleGalleryHover} onClick={() => navigate("/gallery")} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             Gallery
           </MenuButton>
-          <MenuList className='menulist'>
-                     <MenuItem className='menuitem'><a href="/gallery"> Gallery</a></MenuItem>
-                      </MenuList>
+          
         </Menu>
          
         </ul>

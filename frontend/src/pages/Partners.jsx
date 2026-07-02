@@ -78,7 +78,7 @@ const Partners = () => {
           {partner.map((p, index) => (
             <Box
               key={index}
-              width="auto"
+              width="360px"
               backgroundColor="white"
               borderRadius="8px"
               overflow="hidden"
@@ -97,27 +97,39 @@ const Partners = () => {
               <Button
                 width="100%"
                 onClick={() => toggleExpand(index)}
-                leftIcon={
-                  expandedCard === index ? (
-                    <ChevronUpIcon />
-                  ) : (
-                    <ChevronDownIcon />
-                  )
-                }
+              
               >
-                {expandedCard === index ? "Collapse" : "Expand"}
+                {expandedCard === index ? (
+    <VStack spacing={0} className="flex flex-col items-center justify-center">
+      <Text fontSize="sm">Click to See Less</Text>
+      <ChevronUpIcon boxSize={5} color="#F73A48" />
+    </VStack>
+  ) : (
+    <VStack spacing={0} className="flex flex-col items-center justify-center">
+      <Text fontSize="sm">Click to See More</Text>
+      <ChevronDownIcon boxSize={5} color="#F73A48" />
+    </VStack>
+  )}
               </Button>
               <Collapse
                 in={expandedCard === index}
+                style={{width:"100%"}}
                 startingHeight={0}
               >
-                <Text>
-  {p.partnership
-    ? p.partnership.split(",").map((item, i) => (
-        <div key={i}>• {item.trim()}</div>
-      ))
-    : "Partnership details coming soon"}
-</Text>
+                <Box padding="10px" textAlign="left" width="100%">
+                    {p.partnership ? (
+                      p.partnership.split(",").map((item, i) => (
+                        <div key={i} style={{ display: "flex", alignItems: "flex-start", marginBottom: "6px" }}>
+                          <span style={{ marginRight: "8px", flexShrink: 0, color: "#2D3748" }}>•</span>
+                          <span style={{ fontSize: "14px", color: "#2D3748", whiteSpace: "pre-line" }}>
+                            {item.trim()}
+                          </span>
+                        </div>
+                      ))
+                    ) : (
+                      <Text fontSize="14px" color="gray.500">Partnership details coming soon</Text>
+                    )}
+                  </Box>
               </Collapse>
             </Box>
           ))}
@@ -155,25 +167,39 @@ const Partners = () => {
               <Button
                 width="100%"
                 onClick={() => toggleExpand(index)}
-                leftIcon={
-                  expandedCard === index ? (
-                    <ChevronUpIcon />
-                  ) : (
-                    <ChevronDownIcon />
-                  )
-                }
+                
               >
-                {expandedCard === index ? "Collapse" : "Expand"}
+               {expandedCard === index? (
+    <VStack spacing={0} className="flex flex-col items-center justify-center">
+      <Text fontSize="sm">Click to See Less</Text>
+      <ChevronUpIcon boxSize={5} color="#F73A48" />
+    </VStack>
+  ) : (
+    <VStack spacing={0} className="flex flex-col items-center justify-center">
+      <Text fontSize="sm">Click to See More</Text>
+      <ChevronDownIcon boxSize={5} color="#F73A48" />
+    </VStack>
+  )}
               </Button>
               <Collapse
                 in={expandedCard === index}
                 startingHeight={0}
+                style={{width:"100%"}}
               >
-                <Box padding="10px">
-                  <Text>
-                    {pa.partnership || "Partnership details coming soon"}
-                  </Text>
-                </Box>
+                <Box padding="10px" textAlign="left" width="100%">
+                    {pa.partnership ? (
+                      pa.partnership.split(",").map((item, i) => (
+                        <div key={i} style={{ display: "flex", alignItems: "flex-start", marginBottom: "6px" }}>
+                          <span style={{ marginRight: "8px", flexShrink: 0, color: "#2D3748" }}>•</span>
+                          <span style={{ fontSize: "14px", color: "#2D3748", whiteSpace: "pre-line" }}>
+                            {item.trim()}
+                          </span>
+                        </div>
+                      ))
+                    ) : (
+                      <Text fontSize="14px" color="gray.500">Partnership details coming soon</Text>
+                    )}
+                  </Box>
               </Collapse>
             </Box>
           ))}
@@ -212,25 +238,39 @@ const Partners = () => {
               <Button
                 width="100%"
                 onClick={() => toggleExpand(index)}
-                leftIcon={
-                  expandedCard === index ? (
-                    <ChevronUpIcon />
-                  ) : (
-                    <ChevronDownIcon />
-                  )
-                }
+                
               >
-                {expandedCard === index ? "Collapse" : "Expand"}
+               {expandedCard === index ? (
+    <VStack spacing={0} className="flex flex-col items-center justify-center">
+      <Text fontSize="sm">Click to See Less</Text>
+      <ChevronUpIcon boxSize={5} color="#F73A48" />
+    </VStack>
+  ) : (
+    <VStack spacing={0} className="flex flex-col items-center justify-center">
+      <Text fontSize="sm">Click to See More</Text>
+      <ChevronDownIcon boxSize={5} color="#F73A48" />
+    </VStack>
+  )}
               </Button>
               <Collapse
                 in={expandedCard === index}
                 startingHeight={0}
+                style={{width:"100%"}}
               >
-                <Box padding="10px">
-                  <Text>
-                    {paa.partnership || "Partnership details coming soon"}
-                  </Text>
-                </Box>
+                <Box padding="10px" textAlign="left" width="100%">
+                    {paa.partnership ? (
+                      paa.partnership.split(",").map((item, i) => (
+                        <div key={i} style={{ display: "flex", alignItems: "flex-start", marginBottom: "6px" }}>
+                          <span style={{ marginRight: "8px", flexShrink: 0, color: "#2D3748" }}>•</span>
+                          <span style={{ fontSize: "14px", color: "#2D3748", whiteSpace: "pre-line" }}>
+                            {item.trim()}
+                          </span>
+                        </div>
+                      ))
+                    ) : (
+                      <Text fontSize="14px" color="gray.500">Partnership details coming soon</Text>
+                    )}
+                  </Box>
               </Collapse>
             </Box>
           ))}

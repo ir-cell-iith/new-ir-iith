@@ -56,6 +56,15 @@ const NavBar = () => {
 
    const handleJicaHover = () => handleClearMenus();
   const handleNewsHover = () => handleClearMenus();
+    const handleGalleryHover = () => handleClearMenus();
+    const handleContHover = () => handleClearMenus();
+    let contscroller = isMobile ? "750" : "500";
+      const handleContScroll = () => {
+          window.scrollTo({
+              top: contscroller,
+              behavior: "smooth",
+          });
+      };
 const navigate = useNavigate();
   return (
     <nav className="navbar" style={{position:"sticky"}}>
@@ -91,10 +100,6 @@ const navigate = useNavigate();
           <MenuButton as={Button} onMouseOver={handleJicaHover} onClick={() => window.open("https://japandesk.iith.ac.in/", "_blank", "noopener,noreferrer")}  style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             JICA
           </MenuButton>
-          <MenuList className='menulist'>
-            <MenuItem className='menuitem'><a href="/jica">Japan International Cooperation Agency</a></MenuItem>
-            <MenuItem className='menuitem'><a href="https://www.iith.ac.in/japandesk/">Japan Desk</a></MenuItem>
-            </MenuList>
         </Menu>
 
         <Menu>
@@ -121,7 +126,17 @@ const navigate = useNavigate();
                    News
                    </MenuButton>
             </Menu>  
-        
+         <Menu>
+                  <MenuButton as={Button} onMouseOver={handleContHover} onClick={handleContScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+                    Contacts
+                  </MenuButton>
+                </Menu>
+                
+                <Menu>
+                  <MenuButton as={Button} onMouseOver={handleGalleryHover} onClick={() => navigate("/gallery")} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+                    Gallery
+                  </MenuButton>
+                  </Menu>
       </ul>
       <div className="navbar-notification">
         <img src={notificationicon} style={{width:"46px", height:"46px"}} alt="Notifications" />
