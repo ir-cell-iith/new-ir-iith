@@ -5,7 +5,7 @@ import ircellLogo from "./icons/ircellLogo.png";
 import iithlogo from "./icons/iithlogo.png";
 import notificationicon from "./icons/notificationicon.png";
 import { isMobile } from 'react-device-detect';
-
+import { useNavigate } from "react-router-dom";
 import {
   Menu,
   MenuButton,
@@ -22,22 +22,41 @@ import { Navigate } from 'react-router-dom';
 
 
 const NavBar = () => {
-  let contscroller = isMobile ? "750" : "3500";
-    const handleContScroll = () => {
-        window.scrollTo({
-            top: contscroller,
-            behavior: "smooth",
-        });
-    };
+    const handleHoverOpen = (e) => {
+    const triggerButton = e.currentTarget;
+    const parentMenu = triggerButton.closest('.chakra-menu');
+    
+    // 1. Instantly find and close ANY other menu lists currently left open on the screen
+    document.querySelectorAll('.chakra-menu__menu-button[aria-expanded="true"]').forEach((openButton) => {
+      if (openButton !== triggerButton) {
+        // We use HTMLElement.click to cleanly shut it down natively
+          openButton.click();
+      }
+    });
+    // 2. Open our current targeted dropdown
+    if (triggerButton.getAttribute('aria-expanded') === 'false') {
+        triggerButton.click();
+    }
+  };
+  const handleClearMenus = () => {
+    document.querySelectorAll('.chakra-menu__menu-button[aria-expanded="true"]').forEach((openButton) => {
+      openButton.click();
+    });
+  };
 
-    let galscroller = isMobile ? "750" : "5400";
-    const handlegalScroll = () => {
-        window.scrollTo({
-            top: galscroller,
-            behavior: "smooth",
-        });
-    };
-  
+  // 3. Main wrapper exit engine
+  const handleNavbarMouseLeave = () => {
+    handleClearMenus();
+  };
+
+  const handleHomeScroll = (e) => handleHoverOpen(e);
+  const handleabtScroll = (e) => handleHoverOpen(e);
+  const handlepartScroll = (e) => handleHoverOpen(e);
+  const handleadmScroll = (e) => handleHoverOpen(e);
+
+   const handleJicaHover = () => handleClearMenus();
+  const handleNewsHover = () => handleClearMenus();
+const navigate = useNavigate();
   return (
     <nav className="navbar" style={{position:"sticky"}}>
       <div className="navbar-logo">
@@ -47,7 +66,7 @@ const NavBar = () => {
       <ul className="navbar-links">
       
         <Menu>
-          <MenuButton as={Button} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+          <MenuButton as={Button} onMouseOver={handleHomeScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             Home
           </MenuButton>
           <MenuList className='menulist'>
@@ -56,7 +75,7 @@ const NavBar = () => {
         </Menu>
         
         <Menu>
-          <MenuButton as={Button} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+          <MenuButton as={Button} onMouseOver={handleabtScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             About Us
           </MenuButton>
           <MenuList className='menulist'>
@@ -69,7 +88,7 @@ const NavBar = () => {
         </Menu>
         
         <Menu>
-          <MenuButton as={Button}  style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+          <MenuButton as={Button} onMouseOver={handleJicaHover} onClick={() => window.open("https://japandesk.iith.ac.in/", "_blank", "noopener,noreferrer")}  style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             JICA
           </MenuButton>
           <MenuList className='menulist'>
@@ -79,7 +98,7 @@ const NavBar = () => {
         </Menu>
 
         <Menu>
-          <MenuButton as={Button} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+          <MenuButton as={Button}  onMouseOver={handlepartScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             Partners
           </MenuButton>
           <MenuList className='menulist'>
@@ -89,7 +108,7 @@ const NavBar = () => {
         </Menu>
 
         <Menu>
-          <MenuButton as={Button} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
+          <MenuButton as={Button} onMouseOver={handleadmScroll} style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>
             Admissions
           </MenuButton>
           <MenuList className='menulist'>
@@ -98,7 +117,7 @@ const NavBar = () => {
           </MenuList>
         </Menu>
          <Menu>
-                   <MenuButton as={Button} onClick={() => window.location.href = "/news"}  style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>                   
+                   <MenuButton as={Button} onMouseOver={handleNewsHover}  onClick={() => navigate("/news")}   style={{backgroundColor:"transparent"}} _hover={{ color: '#F73A48' }} _expanded={{ color: '#F73A48' }}>                   
                    News
                    </MenuButton>
             </Menu>  
