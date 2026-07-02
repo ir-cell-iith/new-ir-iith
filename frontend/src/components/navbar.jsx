@@ -67,7 +67,7 @@ const NavBar = () => {
       };
 const navigate = useNavigate();
   return (
-    <nav className="navbar" style={{position:"sticky"}}>
+    <nav className="navbar" style={{position:"sticky"}} onMouseLeave={handleNavbarMouseLeave}>
       <div className="navbar-logo">
         <a href='https://ir.iith.ac.in/'><img src={iithlogo} style={{width:"10vw", height:"auto"}} alt="International Relations Cell Logo" /></a>
         
